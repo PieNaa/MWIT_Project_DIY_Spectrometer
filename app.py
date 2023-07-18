@@ -35,7 +35,13 @@ def main():
         image = Image.open(uploaded_image)
         st.image(image, caption="Uploaded Image", use_column_width=True)
 
-        st.write("ค่อย ๆ กด จิ้มเลือกพิกัดจ้า:")
+        st.write("หลังจากอัปโหลดรูปภาพแล้ว ให้ทำการคลิกบนตำแหน่งต่าง ๆ ได้แก่")
+        st.write("1. ตำแหน่งจุดขอบบนของ lightsource")
+        st.write("2. ตำแหน่งจุดขอบล่างของ lightsource")
+        st.write("3. ตำแหน่งจุดตรงกลางของ Spectrum Line ที่ต้องการทราบความยาวคลื่น")
+        st.write("ในทุกครั้งที่คลิก ให้ทำการกด Submit ค่าสำหรับแต่ละตำแหน่ง")
+        st.write("หลังได้ค่าครบทุกตำแหน่งแล้ว ซึ่งสามารถเช็คได้จากตารางแสดงผล ให้ทำการกด Calculate ซึ่งเป็นปุ่มล่างสุด")ฃ
+        st.write("หากอยากทราบความยาวคลื่นของ Spectrum Line เส้นอื่น ให้เช่นเดียวกับข้อ 3. อีกครั้งที่โดยไม่ต้องเริ่มใหม่ในข้อ 1. และ 2.")
 
         clicked_coor = streamlit_image_coordinates(
             image,
