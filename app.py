@@ -18,7 +18,14 @@ def get_data():
 def main():
     df = get_data()
 
-    st.title("Spectrometer สำหรับ พาย ปันปัน มิว แทน เท่านั้นนน ใช้กลุ่มอื่นค่าจะผิดเด้อ")
+    st.title("เว็บไซต์คำนวณหาความยาวคลื่น ซึ่งใช้กับ DIY Spectrometer")
+
+    st.write("จัดทำโดยนักเรียนชั้น ม.6/5")
+
+    st.write("- น.ส.นัสวรรณ รุ่งฤทธิเดช เลขที่ 4")
+    st.write("- น.ส.ปภาดา เจริญสิทธิ์ เลขที่ 6")
+    st.write("- น.ส.พาขวัญ บุญประกายแก้ว เลขที่ 7")
+    st.write("- น.ส.อนัญญา ไชยนพกุล เลขที่ 9")
 
     uploaded_image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
