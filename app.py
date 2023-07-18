@@ -51,7 +51,7 @@ def main():
 
         st.write(clicked_coor)
 
-        st.write("---*---*---*---*---*---*---*---*---*---*---")
+        st.write("---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
 
         if st.button("Submit : Coordinate of the top of the light source"):
             if clicked_coor:
@@ -59,7 +59,7 @@ def main():
                 df.loc[df['Point'] == 'Lightsource_Top_Point', 'Y-Coordinate'] = clicked_coor.get("y")
                 st.write(f"You submitted: {clicked_coor}")
 
-        st.write("---*---*---*---*---*---*---*---*---*---*---")
+        st.write("---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
 
         if st.button("Submit : Coordinate of the buttom of the light source"):
             if clicked_coor:
@@ -67,17 +67,20 @@ def main():
                 df.loc[df['Point'] == 'Lightsource_Buttom_Point', 'Y-Coordinate'] = clicked_coor.get("y")
                 st.write(f"You submitted: {clicked_coor}")
 
-        st.write("---*---*---*---*---*---*---*---*---*---*---")
+        st.write("---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
         
         if st.button("Submit : Coordinate of the midpoint of the spectrum line"):
             if clicked_coor:
                 df.loc[df['Point'] == 'Spectrum_Line_Mid_Point', 'X-Coordinate'] = clicked_coor.get("x")
                 df.loc[df['Point'] == 'Spectrum_Line_Mid_Point', 'Y-Coordinate'] = clicked_coor.get("y")
                 st.write(f"You submitted: {clicked_coor}")
+                
+        st.write("---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
 
+        st.write("ตารางแสดงค่าพิกัดของจุดที่ได้ทำการคลิกและ submit แล้ว")
         st.write(df)
 
-        st.write("---*---*---*---*---*---*---*---*---*---*---")
+        st.write("---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
         
         if st.button("Calculate the wavelength of the selected spectrum line"):
             if clicked_coor:
