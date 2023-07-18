@@ -34,7 +34,7 @@ def main():
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
         st.image(image, caption="Uploaded Image", use_column_width=True)
-
+        
         st.write("หลังจากอัปโหลดรูปภาพแล้ว ให้ทำการคลิกบนตำแหน่งต่าง ๆ ได้แก่")
         st.write("1. ตำแหน่งจุดขอบบนของ lightsource")
         st.write("2. ตำแหน่งจุดขอบล่างของ lightsource")
