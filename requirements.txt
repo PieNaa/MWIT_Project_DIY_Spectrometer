@@ -2,5 +2,3 @@ streamlit
 streamlit-image-coordinates
 numpy
 pandas
-math
-PIL
