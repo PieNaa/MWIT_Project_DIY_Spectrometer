@@ -18,7 +18,7 @@ def get_data():
 def main():
     df = get_data()
 
-    st.title("เว็บไซต์คำนวณหาความยาวคลื่น")
+    st.title("TEST เว็บไซต์คำนวณหาความยาวคลื่น")
 
     st.write("ใช้ได้กับ DIY Spectrometer ที่จัดทำขึ้นโดยกลุ่มของพวกเราเท่านั้น")
 
