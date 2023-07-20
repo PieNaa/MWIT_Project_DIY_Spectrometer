@@ -93,7 +93,10 @@ def main():
                 distance_to_spectrum = math.sqrt((df.loc[2, 'X-Coordinate'] - midpoint_of_light_source_x)**2 + (df.loc[2, 'Y-Coordinate'] - midpoint_of_light_source_y)**2)
                 constant_val = 1/(10000*11)
                 y_val = 2*distance_to_spectrum/length_of_light_source
-                lambda_val = int(y_val*constant_val*10000000)
+                lambda_val = y_val*constant_val*10000000
+                lambda_val = 0.738 * lambda_val
+                lambda_val = lambda_val + 113
+                lambda_val = int(lambda_val)
                 st.write(f"Wavelength: {lambda_val} nm")
 
 
